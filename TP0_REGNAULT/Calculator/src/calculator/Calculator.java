@@ -35,5 +35,16 @@ public class Calculator {
         System.out.print("Veuillez entrer la deuxième valeur : ");
         operande2 = sc.nextDouble();  
         System.out.println("La deuxième valeur saisie est : " + operande2);
+        if (operateur == 1) {
+            resultat = operande1 + operande2;
+        } else if (operateur == 2) {
+            resultat = operande1 - operande2;
+        } else if (operateur == 3) {
+            resultat = operande1 * operande2;
+        } else if (operateur == 4) {
+            resultat = operande1 / operande2;
+        } else if (operateur == 5) {
+            resultat = operande1 % operande2; }
+        System.out.println("Le résultat est : " + resultat);
     }
 }
