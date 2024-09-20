@@ -1,6 +1,7 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ * TP1
+ * Exercice 1 : manipnombreint
+ * Louis Regnault-Loquet
  */
 package tp1_manipnombresint_regnault;
 
