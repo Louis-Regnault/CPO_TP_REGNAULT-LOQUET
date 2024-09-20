@@ -1,8 +1,11 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ * TP1
+ * Exercice 2 : Convertisseur
+ * Louis Regnault-Loquet
  */
 package tp1_convertisseur_regnault;
+
+import java.util.Scanner;
 
 /**
  *
@@ -14,7 +17,10 @@ public class TP1_convertisseur_REGNAULT {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Veuillez entrer une valeur réelle : ");
+        double valeurReelle = sc.nextDouble();
+        System.out.println("La valeur réelle saisie est : " + valeurReelle);
     }
     
 }
