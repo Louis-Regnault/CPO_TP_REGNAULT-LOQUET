@@ -29,6 +29,11 @@ public class Calculator {
                           5)modulo""");
         operateur = sc.nextInt();
         System.out.println("Vous avez choisi l'operateur: " + operateur);
+        if (operateur < 1 || operateur > 5) {
+            System.out.println("Erreur : opérateur non valide. Veuillez choisir un opérateur entre 1 et 5.");
+            System.exit(0);
+        } else {
+        }
         System.out.print("Veuillez entrer la première valeur : ");
         operande1 = sc.nextDouble();  
         System.out.println("La première valeur saisie est : " + operande1);
