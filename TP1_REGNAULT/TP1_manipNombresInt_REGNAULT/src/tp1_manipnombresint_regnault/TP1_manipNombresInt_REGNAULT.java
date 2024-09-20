@@ -36,7 +36,7 @@ public class TP1_manipNombresInt_REGNAULT {
             System.out.println("Le quotient entier de " + entier1 + " divisé par " + entier2 + " est : " + quotient);
             System.out.println("Le reste de la division de " + entier1 + " par " + entier2 + " est : " + reste);
         } else {
-            System.out.println("Erreur : division par zéro !");
+            System.out.println("Erreur : pas de division par 0");
         }
     }
     
