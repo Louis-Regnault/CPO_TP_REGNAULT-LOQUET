@@ -1,7 +1,7 @@
 /*
  * TP1
  * guessMyNumber
- * Louis REGNAULT-LOQUET
+ * Louis Regnault-Loquet
  */
 package tp1_guessmynumber_regnault.loquet;
 
