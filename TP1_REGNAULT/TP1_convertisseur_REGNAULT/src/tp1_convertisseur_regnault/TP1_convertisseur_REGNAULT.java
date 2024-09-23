@@ -39,11 +39,47 @@ public class TP1_convertisseur_REGNAULT {
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Veuillez entrer une température en degrés Celsius : ");
-        double temperatureCelsius = sc.nextDouble();
-        double temperatureKelvin = temperatureCelsius + 273.15;
-        System.out.println("La température saisie en degrés Celsius est : " + temperatureCelsius);
-        System.out.println("La température correspondante en Kelvin est : " + temperatureKelvin);
+        System.out.print("Veuillez entrer une température : ");
+        double temperature = sc.nextDouble();
+        System.out.println("Saisissez la conversion que vous souhaitez effectuer : ");
+        System.out.println("1) De Celsius vers Kelvin");
+        System.out.println("2) De Kelvin vers Celsius");
+        System.out.println("3) De Fahrenheit vers Celsius");
+        System.out.println("4) De Celsius vers Fahrenheit");
+        System.out.println("5) De Kelvin vers Fahrenheit");
+        System.out.println("6) De Fahrenheit vers Kelvin");
+        int choix = sc.nextInt();
+
+        double resultat = 0;  //
+
+        switch (choix) {
+            case 1:
+                resultat = CelciusVersKelvin(temperature);
+                System.out.println(temperature + " degré Celsius est égal à " + resultat + " degrés Kelvin");
+                break;
+            case 2:
+                resultat = KelvinVersCelcius(temperature);
+                System.out.println(temperature + " degré Kelvin est égal à " + resultat + " degrés Celsius");
+                break;
+            case 3:
+                resultat = FarenheitVersCelcius(temperature);
+                System.out.println(temperature + " degré Fahrenheit est égal à " + resultat + " degrés Celsius");
+                break;
+            case 4:
+                resultat = CelciusVersFarenheit(temperature);
+                System.out.println(temperature + " degré Celsius est égal à " + resultat + " degrés Fahrenheit");
+                break;
+            case 5:
+                resultat = KelvinVersFarenheit(temperature);
+                System.out.println(temperature + " degré Kelvin est égal à " + resultat + " degrés Fahrenheit");
+                break;
+            case 6:
+                resultat = FarenheitVersKelvin(temperature);
+                System.out.println(temperature + " degré Fahrenheit est égal à " + resultat + " degrés Kelvin");
+                break;
+            default:
+                System.out.println("Choix invalide. Veuillez saisir une valeur entre 1 et 6.");
+        }
     }
 }
 
