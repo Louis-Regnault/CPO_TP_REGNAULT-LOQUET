@@ -21,6 +21,13 @@ public class TP2_Bieres_REGNAULTLOQUET {
         uneBiere.brasserie = "Brasserie Dubuisson";
         uneBiere.ouverte = false;
         uneBiere.lireEtiquette();
+        
+        BouteilleBiere uneSecondeBiere = new BouteilleBiere();
+        uneSecondeBiere.nom = "Leffe";
+        uneSecondeBiere.degreAlcool = 6.6f;
+        uneSecondeBiere.brasserie = "Abbaye de Leffe";
+        uneSecondeBiere.ouverte = false;
+        uneSecondeBiere.lireEtiquette();
     }
     
 }
