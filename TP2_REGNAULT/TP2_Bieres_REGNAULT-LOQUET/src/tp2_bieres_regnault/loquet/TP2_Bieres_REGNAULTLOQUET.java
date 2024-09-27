@@ -14,20 +14,13 @@ public class TP2_Bieres_REGNAULTLOQUET {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        BouteilleBiere uneBiere = new BouteilleBiere();
-        uneBiere.nom = "Cuvée des Trolls";
-        uneBiere.degreAlcool = (float) 7.0;
-        uneBiere.brasserie = "Brasserie Dubuisson";
-        uneBiere.ouverte = false;
-        uneBiere.lireEtiquette();
-        
-        BouteilleBiere uneSecondeBiere = new BouteilleBiere();
-        uneSecondeBiere.nom = "Leffe";
-        uneSecondeBiere.degreAlcool = 6.6f;
-        uneSecondeBiere.brasserie = "Abbaye de Leffe";
-        uneSecondeBiere.ouverte = false;
-        uneSecondeBiere.lireEtiquette();
-    }
     
-}
+        public static void main(String[] args) {
+        // Utilisation du constructeur
+        BouteilleBiere uneBiere = new BouteilleBiere("Cuvée des Trolls", 7.0f, "Brasserie Dubuisson");
+        uneBiere.lireEtiquette();  
+        BouteilleBiere uneSecondeBiere = new BouteilleBiere("Leffe", 6.6f, "Abbaye de Leffe");
+        uneSecondeBiere.lireEtiquette();  
+    }
+    }
+
