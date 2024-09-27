@@ -20,7 +20,9 @@ public class TP2_Bieres_REGNAULTLOQUET {
         BouteilleBiere uneBiere = new BouteilleBiere("Cuvée des Trolls", 7.0f, "Brasserie Dubuisson");
         uneBiere.lireEtiquette();  
         BouteilleBiere uneSecondeBiere = new BouteilleBiere("Leffe", 6.6f, "Abbaye de Leffe");
-        uneSecondeBiere.lireEtiquette();  
+        uneSecondeBiere.lireEtiquette();
+        BouteilleBiere uneTroisiemeBiere = new BouteilleBiere();
+        uneTroisiemeBiere.lireEtiquette();
     }
     }
 

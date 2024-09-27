@@ -9,21 +9,28 @@ package tp2_bieres_regnault.loquet;
  *
  * @author louis
  */
-public class BouteilleBiere {
+    public class BouteilleBiere {
     String nom;            
     float degreAlcool;     
     String brasserie;      
     boolean ouverte;
     
-// Constructeur avec paramètres
-    public BouteilleBiere(String nom, float degreAlcool, String brasserie) {
-        this.nom = nom; // this distingue l'attribut des variables
-        this.degreAlcool = degreAlcool;
-        this.brasserie = brasserie;
+    public BouteilleBiere() {
+        this.nom = "Inconnue";
+        this.degreAlcool = 0.0f;
+        this.brasserie = "Inconnue";
         this.ouverte = false;
     }
     
-public void lireEtiquette() {
+    // Constructeur avec trois paramètres
+    public BouteilleBiere(String unNom, float unDegre, String uneBrasserie) {
+        nom = unNom;
+        degreAlcool = unDegre;
+        brasserie = uneBrasserie;
+        ouverte = false;  // bouteille fermée par défaut
+    }
+    
+    public void lireEtiquette() {
         System.out.println("Bouteille de " + nom + " (" + degreAlcool + " degrés)\nBrasserie : " + brasserie);
     }
 }
