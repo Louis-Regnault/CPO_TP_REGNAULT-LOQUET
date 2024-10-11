@@ -31,6 +31,15 @@ public class TP2_Bieres_REGNAULTLOQUET {
         
         BouteilleBiere cinquiemeBiere = new BouteilleBiere("Hoegaarden", 4.9f, "Brouwerij van Hoegaarden");
         cinquiemeBiere.lireEtiquette();
+        
+        uneBiere.Decapsuler();       // Décapsule première bière
+        troisiemeBiere.Decapsuler(); 
+        
+        System.out.println(uneBiere);        // Affiche l'état de la première bière
+        System.out.println(uneSecondeBiere); 
+        System.out.println(troisiemeBiere);  
+        System.out.println(quatriemeBiere);  
+        System.out.println(cinquiemeBiere);
     }
     }
 

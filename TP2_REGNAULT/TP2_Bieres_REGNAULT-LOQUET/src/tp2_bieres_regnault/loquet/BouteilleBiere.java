@@ -11,7 +11,7 @@ package tp2_bieres_regnault.loquet;
  */
     public class BouteilleBiere {
     String nom;            
-    float degreAlcool;     
+    double degreAlcool;     
     String brasserie;      
     boolean ouverte;
     
@@ -23,7 +23,7 @@ package tp2_bieres_regnault.loquet;
     }
     
     // Constructeur avec trois paramètres
-    public BouteilleBiere(String unNom, float unDegre, String uneBrasserie) {
+    public BouteilleBiere(String unNom, double unDegre, String uneBrasserie) {
         nom = unNom;
         degreAlcool = unDegre;
         brasserie = uneBrasserie;
@@ -42,5 +42,16 @@ package tp2_bieres_regnault.loquet;
             System.out.println("Erreur : bière déjà ouverte.");
             return false;
         }
+    }
+     @Override // écrase la méthode toString originelle
+     public String toString() {
+        String chaine;
+        chaine = nom + " (" + degreAlcool + " degrés) Ouverte ? ";
+        if (ouverte == true) {
+            chaine += "oui";
+        } else {
+            chaine += "non";
+        }
+        return chaine;
     }
     }
