@@ -33,4 +33,14 @@ package tp2_bieres_regnault.loquet;
     public void lireEtiquette() {
         System.out.println("Bouteille de " + nom + " (" + degreAlcool + " degrés)\nBrasserie : " + brasserie);
     }
-}
+    public boolean Decapsuler() {
+        if (!ouverte) {
+            ouverte = true;  // Ouvre la bouteille
+            System.out.println("La bière " + nom + " est maintenant ouverte.");
+            return true;
+        } else {
+            System.out.println("Erreur : bière déjà ouverte.");
+            return false;
+        }
+    }
+    }
