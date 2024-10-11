@@ -63,4 +63,4 @@ public class TP2_convertisseurObjet_REGNAULTOQUET {
         System.out.println(convertisseur.toString());
     }
 }
-}
+
