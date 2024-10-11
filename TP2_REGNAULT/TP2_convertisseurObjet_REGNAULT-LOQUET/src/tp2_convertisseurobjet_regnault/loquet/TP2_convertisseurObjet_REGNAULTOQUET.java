@@ -11,9 +11,7 @@ import java.util.Scanner;
  * @author louis
  */
 public class TP2_convertisseurObjet_REGNAULTOQUET {
- 
-
-public class Main {
+    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Convertisseur convertisseur = new Convertisseur();
