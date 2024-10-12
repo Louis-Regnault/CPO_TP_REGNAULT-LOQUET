@@ -14,10 +14,9 @@ public class TP2_convertisseurObjet_REGNAULTOQUET {
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Convertisseur convertisseur = new Convertisseur();
-
-        System.out.print("Veuillez entrer une température : ");
-        float temperature = sc.nextFloat();
+        Convertisseur convertisseur1 = new Convertisseur();
+        System.out.print("Veuillez entrer une température pour le premier convertisseur : ");
+        float temperature1 = sc.nextFloat();
 
         System.out.println("Saisissez la conversion que vous souhaitez effectuer : ");
         System.out.println("1) De Celsius vers Kelvin");
@@ -27,40 +26,85 @@ public class TP2_convertisseurObjet_REGNAULTOQUET {
         System.out.println("5) De Kelvin vers Fahrenheit");
         System.out.println("6) De Fahrenheit vers Kelvin");
 
-        int choix = sc.nextInt();
-        float resultat = 0;
+        int choix1 = sc.nextInt();
+        float resultat1 = 0;
 
-        switch (choix) {
+        switch (choix1) {
             case 1:
-                resultat = convertisseur.CelsiusVersKelvin(temperature);
-                System.out.println(temperature + " degrés Celsius est égal à " + resultat + " degrés Kelvin");
+                resultat1 = convertisseur1.CelsiusVersKelvin(temperature1);
+                System.out.println(temperature1 + " degrés Celsius est égal à " + resultat1 + " degrés Kelvin");
                 break;
             case 2:
-                resultat = convertisseur.KelvinVersCelsius(temperature);
-                System.out.println(temperature + " degrés Kelvin est égal à " + resultat + " degrés Celsius");
+                resultat1 = convertisseur1.KelvinVersCelsius(temperature1);
+                System.out.println(temperature1 + " degrés Kelvin est égal à " + resultat1 + " degrés Celsius");
                 break;
             case 3:
-                resultat = convertisseur.FahrenheitVersCelsius(temperature);
-                System.out.println(temperature + " degrés Fahrenheit est égal à " + resultat + " degrés Celsius");
+                resultat1 = convertisseur1.FahrenheitVersCelsius(temperature1);
+                System.out.println(temperature1 + " degrés Fahrenheit est égal à " + resultat1 + " degrés Celsius");
                 break;
             case 4:
-                resultat = convertisseur.CelsiusVersFahrenheit(temperature);
-                System.out.println(temperature + " degrés Celsius est égal à " + resultat + " degrés Fahrenheit");
+                resultat1 = convertisseur1.CelsiusVersFahrenheit(temperature1);
+                System.out.println(temperature1 + " degrés Celsius est égal à " + resultat1 + " degrés Fahrenheit");
                 break;
             case 5:
-                resultat = convertisseur.KelvinVersFahrenheit(temperature);
-                System.out.println(temperature + " degrés Kelvin est égal à " + resultat + " degrés Fahrenheit");
+                resultat1 = convertisseur1.KelvinVersFahrenheit(temperature1);
+                System.out.println(temperature1 + " degrés Kelvin est égal à " + resultat1 + " degrés Fahrenheit");
                 break;
             case 6:
-                resultat = convertisseur.FahrenheitVersKelvin(temperature);
-                System.out.println(temperature + " degrés Fahrenheit est égal à " + resultat + " degrés Kelvin");
+                resultat1 = convertisseur1.FahrenheitVersKelvin(temperature1);
+                System.out.println(temperature1 + " degrés Fahrenheit est égal à " + resultat1 + " degrés Kelvin");
                 break;
             default:
                 System.out.println("Choix invalide. Veuillez saisir une valeur entre 1 et 6.");
         }
 
-        // Affichage du nombre de conversions effectuées
-        System.out.println(convertisseur.toString());
+        Convertisseur convertisseur2 = new Convertisseur();
+        System.out.print("Veuillez entrer une température pour le deuxième convertisseur : ");
+        float temperature2 = sc.nextFloat();
+
+        System.out.println("Saisissez la conversion que vous souhaitez effectuer : ");
+        System.out.println("1) De Celsius vers Kelvin");
+        System.out.println("2) De Kelvin vers Celsius");
+        System.out.println("3) De Fahrenheit vers Celsius");
+        System.out.println("4) De Celsius vers Fahrenheit");
+        System.out.println("5) De Kelvin vers Fahrenheit");
+        System.out.println("6) De Fahrenheit vers Kelvin");
+
+        int choix2 = sc.nextInt();
+        float resultat2 = 0;
+
+        switch (choix2) {
+            case 1:
+                resultat2 = convertisseur2.CelsiusVersKelvin(temperature2);
+                System.out.println(temperature2 + " degrés Celsius est égal à " + resultat2 + " degrés Kelvin");
+                break;
+            case 2:
+                resultat2 = convertisseur2.KelvinVersCelsius(temperature2);
+                System.out.println(temperature2 + " degrés Kelvin est égal à " + resultat2 + " degrés Celsius");
+                break;
+            case 3:
+                resultat2 = convertisseur2.FahrenheitVersCelsius(temperature2);
+                System.out.println(temperature2 + " degrés Fahrenheit est égal à " + resultat2 + " degrés Celsius");
+                break;
+            case 4:
+                resultat2 = convertisseur2.CelsiusVersFahrenheit(temperature2);
+                System.out.println(temperature2 + " degrés Celsius est égal à " + resultat2 + " degrés Fahrenheit");
+                break;
+            case 5:
+                resultat2 = convertisseur2.KelvinVersFahrenheit(temperature2);
+                System.out.println(temperature2 + " degrés Kelvin est égal à " + resultat2 + " degrés Fahrenheit");
+                break;
+            case 6:
+                resultat2 = convertisseur2.FahrenheitVersKelvin(temperature2);
+                System.out.println(temperature2 + " degrés Fahrenheit est égal à " + resultat2 + " degrés Kelvin");
+                break;
+            default:
+                System.out.println("Choix invalide. Veuillez saisir une valeur entre 1 et 6.");
+        }
+
+        // Affichage du nombre de conversions effectuées par chaque convertisseur
+        System.out.println("Nombre de conversions effectuées par le premier convertisseur : " + convertisseur1);
+        System.out.println("Nombre de conversions effectuées par le deuxième convertisseur : " + convertisseur2);
     }
 }
 
