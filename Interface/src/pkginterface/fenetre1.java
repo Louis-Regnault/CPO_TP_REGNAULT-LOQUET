@@ -15,6 +15,7 @@ public class fenetre1 extends javax.swing.JFrame {
      */
     public fenetre1() {
         initComponents();
+        resultat.setVisible(false);
     }
 
     /**
@@ -85,6 +86,7 @@ public class fenetre1 extends javax.swing.JFrame {
     private void MonBoutonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MonBoutonActionPerformed
     String prenom = zonesaisie.getText();
     resultat.setText("Bonjour " + prenom);// TODO add your handling code here:
+    resultat.setVisible(true);
     }//GEN-LAST:event_MonBoutonActionPerformed
 
     /**
