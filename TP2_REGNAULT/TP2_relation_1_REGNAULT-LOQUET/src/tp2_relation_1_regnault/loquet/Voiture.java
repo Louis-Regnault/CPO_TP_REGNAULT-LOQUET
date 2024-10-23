@@ -29,7 +29,7 @@ public class Voiture {
     // toString() method
     @Override
     public String toString() {
-        return "la voiture suivante : Modèle: " + modele + ", Marque: " + marque + ", PuissanceCV: " + PuissanceCV +
+        return "la voiture : Modèle: " + modele + ", Marque: " + marque + ", PuissanceCV: " + PuissanceCV +
                 ", Propriétaire: " + (proprietaire != null ? proprietaire.getNomComplet() : "Aucun") + "";
     }
 }
