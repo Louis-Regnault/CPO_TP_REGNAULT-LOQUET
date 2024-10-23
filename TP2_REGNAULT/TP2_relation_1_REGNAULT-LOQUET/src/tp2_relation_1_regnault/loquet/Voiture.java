@@ -9,22 +9,36 @@ package tp2_relation_1_regnault.loquet;
  * @author louis
  */
 public class Voiture {
-    private String Modele;
-    private String Marque;
+    private String modele;
+    private String marque;
     private int PuissanceCV;
+    private Personne proprietaire; // Reference to the owner
 
+    // Constructor
     public Voiture(String modele, String marque, int PuissanceCV) {
-        this.Modele = modele;
-        this.Marque = marque;
+        this.modele = modele;
+        this.marque = marque;
         this.PuissanceCV = PuissanceCV;
+        this.proprietaire = null; // No owner yet
     }
 
+    // Method to assign an owner
+    public void setProprietaire(Personne proprietaire) {
+        this.proprietaire = proprietaire;
+    }
+
+    // toString() method
     @Override
     public String toString() {
-        return "Voiture{" + "modele = " + Modele + ", marque = " + Marque + ", PuissanceCV = " + PuissanceCV + '}';
+        return "Voiture [Modèle: " + modele + ", Marque: " + marque + ", PuissanceCV: " + PuissanceCV +
+                ", Propriétaire: " + (proprietaire != null ? proprietaire.getNomComplet() : "Aucun") + "]";
     }
-    
-    
-    
-    
 }
+
+
+    
+
+    
+    
+    
+
