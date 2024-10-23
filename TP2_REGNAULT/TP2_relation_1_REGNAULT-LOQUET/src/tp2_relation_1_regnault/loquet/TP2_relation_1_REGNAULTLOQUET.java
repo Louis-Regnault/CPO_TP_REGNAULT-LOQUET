@@ -25,11 +25,19 @@ public class TP2_relation_1_REGNAULTLOQUET {
         "\n" + uneAutreClio   + "\n" + une2008   + "\n" + uneMicra ) ;
         
         Personne Bob = new Personne("Lennon", "Bob");
-        bob.liste_voitures[0] = uneClio; // Bob possède une Clio
-        bob.nbVoitures = 1; // Mise à jour du nombre de voitures possédées
+        Bob.liste_voitures[0] = uneClio; 
+        Bob.nbVoitures = 1; // Mise à jour du nombre de voitures possédées
         uneClio.setProprietaire(Bob); 
-        System.out.println("la premiere voiture de Bob est " + 
-        Bob.liste_voitures[0] ) ; 
-    }
-    
+        Bob.liste_voitures[bob.nbVoitures] = une2008; 
+        une2008.setProprietaire(bob); // Définir Bob comme propriétaire de la 2008
+        bob.nbVoitures++;
+        
+        Personne Reno = new Personne("Jackson", "Reno");
+        Reno.liste_voitures[0] = uneMicra; 
+        Reno.nbVoitures = 1; 
+        uneMicra.setProprietaire(Reno);
+        Reno.liste_voitures[Reno.nbVoitures] = uneAutreClio;
+             
+}
+  
 }
