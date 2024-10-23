@@ -21,7 +21,7 @@ public class Voiture {
 
     @Override
     public String toString() {
-        return "Voiture{" + "modele=" + Modele + ", marque=" + Marque + ", PuissanceCV=" + PuissanceCV + '}';
+        return "Voiture{" + "modele = " + Modele + ", marque = " + Marque + ", PuissanceCV = " + PuissanceCV + '}';
     }
     
     
