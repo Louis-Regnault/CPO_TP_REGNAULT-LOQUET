@@ -12,7 +12,7 @@ public class Voiture {
     private String modele;
     private String marque;
     private int PuissanceCV;
-    private Personne proprietaire; // Reference to the owner
+    Personne proprietaire; // propriétaire
 
     // Constructor
     public Voiture(String modele, String marque, int PuissanceCV) {
@@ -22,7 +22,6 @@ public class Voiture {
         this.proprietaire = null; // No owner yet
     }
 
-    // Method to assign an owner
     public void setProprietaire(Personne proprietaire) {
         this.proprietaire = proprietaire;
     }
@@ -30,8 +29,8 @@ public class Voiture {
     // toString() method
     @Override
     public String toString() {
-        return "Voiture [Modèle: " + modele + ", Marque: " + marque + ", PuissanceCV: " + PuissanceCV +
-                ", Propriétaire: " + (proprietaire != null ? proprietaire.getNomComplet() : "Aucun") + "]";
+        return "la voiture suivante : Modèle: " + modele + ", Marque: " + marque + ", PuissanceCV: " + PuissanceCV +
+                ", Propriétaire: " + (proprietaire != null ? proprietaire.getNomComplet() : "Aucun") + "";
     }
 }
 

@@ -11,17 +11,18 @@ package tp2_relation_1_regnault.loquet;
 public class Personne {
     private String nom;
     private String prenom;
-    private Voiture[] liste_voitures; // Array to hold up to 3 cars
-    private int nbVoitures; // Number of cars owned
+    Voiture[] liste_voitures; // 3 voitures MAX
+    int nbVoitures; // Nombre de voiture possédée
 
     // Constructor
     public Personne(String nom, String prenom) {
         this.nom = nom;
         this.prenom = prenom;
-        this.liste_voitures = new Voiture[3]; // Allocate memory for up to 3 cars
-        this.nbVoitures = 0; // Initially, the person owns 0 cars
+        this.liste_voitures = new Voiture[3]; 
+        this.nbVoitures = 0; 
+        liste_voitures = new Voiture [3] ; // réserve la mémoire du tableau
     }
-    // ajoutez une voiture à une personne
+    // ajoute une voiture à une personne
     public boolean ajouterVoiture(Voiture voiture) {
         if (nbVoitures < 3) {
             liste_voitures[nbVoitures] = voiture;
@@ -34,7 +35,6 @@ public class Personne {
         }
     }
 
-    // Method to get the full name of the person
     public String getNomComplet() {
         return prenom + " " + nom;
     }
@@ -48,5 +48,6 @@ public class Personne {
         }
         return result + "]";
     }
+    
 }
 
