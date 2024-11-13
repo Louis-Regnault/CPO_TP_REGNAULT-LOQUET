@@ -7,7 +7,7 @@
  *
  * @author louis
  */
-public class Arme {
+public abstract class Arme {
     String nom;
     int niveauAttaque;
 
@@ -18,7 +18,25 @@ public class Arme {
         } else {
             throw new IllegalArgumentException("Le niveau d'attaque doit être <= 100");
         }
+    
     }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public int getNiveauAttaque() {
+        return niveauAttaque;
+    }
+    
+
+    @Override
+    public String toString() {
+        return "Caractéristiques de l'A"
+                + "arme{" + "nom=" + nom + ", niveauAttaque=" + niveauAttaque + '}';
+    }
+
+    
     
     
     
