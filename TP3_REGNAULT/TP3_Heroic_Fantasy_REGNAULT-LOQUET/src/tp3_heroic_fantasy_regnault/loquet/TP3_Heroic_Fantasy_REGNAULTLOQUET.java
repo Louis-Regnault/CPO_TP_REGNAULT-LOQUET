@@ -13,9 +13,17 @@ public class TP3_Heroic_Fantasy_REGNAULTLOQUET {
     /**
      * @param args the command line arguments
      */
+   
+    public class Main {
     public static void main(String[] args) {
-        
-    
+        // Création de deux instances de Epee avec des paramètres différents
+        Epee epee1 = new Epee("Excalibur", 7, 5);
+        Epee epee2 = new Epee("Durandal", 4, 7);
+
+        // Affichage des informations de chaque épée
+        System.out.println(epee1);
+        System.out.println(epee2);
     }
-    
+    }
 }
+

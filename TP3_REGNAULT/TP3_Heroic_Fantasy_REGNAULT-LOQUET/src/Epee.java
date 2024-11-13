@@ -7,31 +7,35 @@
  *
  * @author louis
  */
+// Sous-classe Epee qui hérite de Arme
 public class Epee extends Arme {
-    
-    int IndiceFinesse;
+    // Attribut spécifique pour l'épée
+    private int indiceFinesse;
 
-    public Epee(int IndiceFinesse, String nom, int niveauAttaque) {
-        super(nom, niveauAttaque);
-        this.IndiceFinesse = IndiceFinesse;
-        if (IndiceFinesse < 100) { // Vérifie que l'indice de finesse est inférieur à 100
-            this.IndiceFinesse = IndiceFinesse;
+    // Constructeur pour initialiser les paramètres hérités et l'indice de finesse
+    public Epee(String nom, int niveauAttaque, int indiceFinesse) {
+        super(nom, niveauAttaque); // Initialise le nom et le niveau d'attaque
+        if (indiceFinesse < 100) { // Vérifie que l'indice de finesse est inférieur à 100
+            this.indiceFinesse = indiceFinesse;
         } else {
             throw new IllegalArgumentException("L'indice de finesse doit être < 100");
         }
-           
     }
 
+    // Méthode pour obtenir l'indice de finesse
     public int getIndiceFinesse() {
-        return IndiceFinesse;
+        return indiceFinesse;
     }
 
+    // Redéfinition de la méthode toString pour inclure l'indice de finesse
     @Override
     public String toString() {
-        return "Caractéristique Epee{" + "Indice Finesse = " + IndiceFinesse + '}';
+        return super.toString() + ", Indice de finesse: " + indiceFinesse;
     }
-    
-    
-    
-    
 }
+
+    
+    
+    
+    
+
