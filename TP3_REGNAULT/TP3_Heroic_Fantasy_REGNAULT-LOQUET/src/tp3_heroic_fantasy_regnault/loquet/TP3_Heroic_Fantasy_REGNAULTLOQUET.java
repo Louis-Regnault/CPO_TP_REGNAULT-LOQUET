@@ -16,14 +16,21 @@ public class TP3_Heroic_Fantasy_REGNAULTLOQUET {
    
     public class Main {
     public static void main(String[] args) {
-        // Création de deux instances de Epee avec des paramètres différents
+        // Création des épées avec des paramètres différents
         Epee epee1 = new Epee("Excalibur", 7, 5);
         Epee epee2 = new Epee("Durandal", 4, 7);
 
-        // Affichage des informations de chaque épée
+        // Création des bâtons avec des paramètres différents
+        Baton baton1 = new Baton("Chêne", 4, 5);
+        Baton baton2 = new Baton("Charme", 5, 6);
+
+        // Affichage des objets
+        System.out.println("Objets créés :");
         System.out.println(epee1);
         System.out.println(epee2);
+        System.out.println(baton1);
+        System.out.println(baton2);
     }
-    }
+}
 }
 

@@ -7,27 +7,30 @@
  *
  * @author louis
  */
-public class Baton extends Arme{
-    int age;
+// Classe Baton héritant de Arme
+public class Baton extends Arme {
+    // Attribut propre à Baton
+    private int age;
 
-    public Baton(int age, String nom, int niveauAttaque) {
-        super(nom, niveauAttaque);
-        if (age < 100) { // Vérifie que l'âge est inférieur à 100
+    // Constructeur
+    public Baton(String nom, int niveauAttaque, int age) {
+        super(nom, niveauAttaque); // Appel du constructeur de la classe mère
+        if (age < 100) {
             this.age = age;
         } else {
-            throw new IllegalArgumentException("L'âge doit être < 100");
+            throw new IllegalArgumentException("L'âge du bâton doit être inférieur à 100.");
         }
-        
     }
-        public int getAge() {
+
+    // Accesseur pour l'âge
+    public int getAge() {
         return age;
     }
 
+    // Redéfinition de la méthode toString
     @Override
     public String toString() {
-        return "Caractéristique Baton{" + "age=" + age + '}';
+        return super.toString() + ", Âge: " + age;
     }
-        
-    
-    
 }
+

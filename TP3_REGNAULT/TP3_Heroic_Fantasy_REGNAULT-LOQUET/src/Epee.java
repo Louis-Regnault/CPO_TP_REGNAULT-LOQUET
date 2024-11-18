@@ -7,32 +7,33 @@
  *
  * @author louis
  */
-// Sous-classe Epee qui hérite de Arme
+// Classe Epee héritant de Arme
 public class Epee extends Arme {
-    // Attribut spécifique pour l'épée
+    // Attribut propre à Epee
     private int indiceFinesse;
 
-    // Constructeur pour initialiser les paramètres hérités et l'indice de finesse
+    // Constructeur
     public Epee(String nom, int niveauAttaque, int indiceFinesse) {
-        super(nom, niveauAttaque); // Initialise le nom et le niveau d'attaque
-        if (indiceFinesse < 100) { // Vérifie que l'indice de finesse est inférieur à 100
+        super(nom, niveauAttaque); // Appel du constructeur de la classe mère
+        if (indiceFinesse < 100) {
             this.indiceFinesse = indiceFinesse;
         } else {
-            throw new IllegalArgumentException("L'indice de finesse doit être < 100");
+            throw new IllegalArgumentException("L'indice de finesse doit être inférieur à 100.");
         }
     }
 
-    // Méthode pour obtenir l'indice de finesse
+    // Accesseur pour l'indice de finesse
     public int getIndiceFinesse() {
         return indiceFinesse;
     }
 
-    // Redéfinition de la méthode toString pour inclure l'indice de finesse
+    // Redéfinition de la méthode toString
     @Override
     public String toString() {
         return super.toString() + ", Indice de finesse: " + indiceFinesse;
     }
 }
+
 
     
     
