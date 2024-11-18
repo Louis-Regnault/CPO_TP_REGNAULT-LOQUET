@@ -33,7 +33,10 @@ public class TP3_Heroic_Fantasy_REGNAULTLOQUET {
         System.out.println(epee2);
         System.out.println(baton1);
         System.out.println(baton2);
+      
+
     }
 }
+
 }
 
