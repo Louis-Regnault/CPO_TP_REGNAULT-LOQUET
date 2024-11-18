@@ -17,7 +17,7 @@ public class TP3_Heroic_Fantasy_REGNAULTLOQUET {
    
     public class Main {
     
-    public static void main(String[] args) {
+    public static void main(String[] args){
         // Création des épées avec des paramètres différents
         
         Epee epee1 = new Epee("Excalibur", 7, 5);
