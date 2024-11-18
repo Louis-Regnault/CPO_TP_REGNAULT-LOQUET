@@ -10,13 +10,16 @@ package tp3_heroic_fantasy_regnault.loquet;
  */
 public class TP3_Heroic_Fantasy_REGNAULTLOQUET {
 
+
     /**
      * @param args the command line arguments
      */
    
     public class Main {
+    
     public static void main(String[] args) {
         // Création des épées avec des paramètres différents
+        
         Epee epee1 = new Epee("Excalibur", 7, 5);
         Epee epee2 = new Epee("Durandal", 4, 7);
 

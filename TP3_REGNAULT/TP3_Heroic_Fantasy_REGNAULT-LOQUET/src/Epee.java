@@ -7,6 +7,7 @@
  *
  * @author louis
  */
+
 // Classe Epee héritant de Arme
 public class Epee extends Arme {
     // Attribut propre à Epee
