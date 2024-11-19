@@ -9,13 +9,13 @@
  */
 
 // Classe Epee héritant de Arme
+
 public class Epee extends Arme {
-    // Attribut propre à Epee
-    private int indiceFinesse;
+    private int indiceFinesse; // Indice de finesse (< 100)
 
     // Constructeur
     public Epee(String nom, int niveauAttaque, int indiceFinesse) {
-        super(nom, niveauAttaque); // Appel du constructeur de la classe mère
+        super(nom, niveauAttaque); // Appel au constructeur de la classe parent (Arme)
         if (indiceFinesse < 100) {
             this.indiceFinesse = indiceFinesse;
         } else {
@@ -23,7 +23,7 @@ public class Epee extends Arme {
         }
     }
 
-    // Accesseur pour l'indice de finesse
+    // Getter pour l'indice de finesse
     public int getIndiceFinesse() {
         return indiceFinesse;
     }
@@ -31,9 +31,12 @@ public class Epee extends Arme {
     // Redéfinition de la méthode toString
     @Override
     public String toString() {
-        return super.toString() + ", Indice de finesse: " + indiceFinesse;
+        return "Epee: " + getNom() + ", Niveau d'attaque: " + getNiveauAttaque() +
+               ", Indice de finesse: " + indiceFinesse + "\n";
     }
 }
+
+
 
 
     

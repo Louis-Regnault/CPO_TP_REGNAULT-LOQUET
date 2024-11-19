@@ -8,9 +8,11 @@
  * @author louis
  */
 // Classe abstraite Arme
+
+
 public abstract class Arme {
-    private String nom;
-    private int niveauAttaque;
+    private String nom; // Nom de l'arme
+    private int niveauAttaque; // Niveau d'attaque (<= 100)
 
     // Constructeur
     public Arme(String nom, int niveauAttaque) {
@@ -22,22 +24,23 @@ public abstract class Arme {
         }
     }
 
-    // Accesseur pour le niveau d'attaque
+    // Getter pour le niveau d'attaque
     public int getNiveauAttaque() {
         return niveauAttaque;
     }
 
-    // Accesseur pour le nom
+    // Getter pour le nom
     public String getNom() {
         return nom;
     }
 
-    // Méthode toString redéfinie
+    // Redéfinition de la méthode toString
     @Override
     public String toString() {
         return "Arme: " + nom + ", Niveau d'attaque: " + niveauAttaque;
     }
 }
+
 
 
 
